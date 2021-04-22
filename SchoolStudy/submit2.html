@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>20221-최지민</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+        h3{
+            font-family: 'Black Han Sans', sans-serif;
+        }
+        li{
+            font-size: 15pt;
+            color: rgb(133, 159, 226);
+            font-family: 'Yeon Sung', cursive;
+            list-style-type: upper-roman;
+        }
+        th,td{
+            border: 1px dotted green;
+        }
+        .th1{
+            font-family: 'Gugi', cursive;
+           text-decoration: underline;
+        }
+        .td1{
+            color: rgb(1, 103, 255);
+        }
+        #first_table{
+            border-spacing: 0;
+            border: 1px solid #2f87df;
+        }  
+        #second_table{
+            border: 3px solid;
+            border-collapse:collapse;
+        }
+    </style>
+</head>
+<body>
+    <h3>자기소개</h3>
+        <ol>
+            <li>기본정보</li>
+                <table id="first_table">
+
+                    <tr>
+                        <th rowspan="4"><img src="shiba.jpg" width="60px" height="60px"></th>
+                        <th class="th1">이름</th>
+                        <td colspan="3" class="td1">홍 길 동</td>
+                    </tr>
+
+                    <tr>
+                        <th class="th1">학교</th>
+                        <td colspan="3" class="td1">상일미디어고등학교</td>
+                    </tr>
+
+                    <tr>
+                        <th class="th1">학년</th>
+                        <td class="td1">2</td>
+                        <th class="th1">반</th>
+                        <td class="td1">2</td>
+                    </tr>
+
+                    <tr>
+                        <th class="th1">전공</th>
+                        <td colspan="3" class="td1">스마트소프트웨어과</td>
+                    </tr>
+
+                    <tr>
+                        <th class="th1">동아리</th>
+                        <td colspan="4" class="td1">여울컴</td>
+                    </tr> 
+
+                </table>
+
+            <li>출신학교</li>
+
+                <table id="second_table">
+
+                    <tr>
+                       <th rowspan="3">출신학교</th>
+                       <td>초등</td>
+                       <td>ㅇㅇ초등학교</td>
+                    </tr>
+
+                    <tr>
+                        <td>중등</td>
+                        <td>ㅇㅇ중학교</td>
+                    </tr>
+
+                    <tr>
+                        <td>고등</td>
+                        <td>ㅇㅇ고등학교</td>
+                    </tr>
+
+                </table>
+        </ol>  
+</body>
+</html>
