@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap'); 
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+        .title {
+            font-family: 'Jua', sans-serif;
+        }
+
+        li {
+            font-family: 'Black Han Sans', sans-serif;
+            font-size: 15pt;
+            color: orange;
+            list-style-type: upper-roman
+        }
+
+        .first_table {
+            border: 1px solid chocolate;
+            border-spacing: 0;
+        }
+
+        .first_table th {
+            font-family: 'Gugi', cursive;
+            text-decoration: underline;
+        }
+
+        .first_table td {
+            color: orangered;
+        }
+
+        .school {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px dotted grey;
+        }
+    </style>
+</head>
+<body>
+   
+    <h3 class="title">자기소개</h3>
+    <ol>
+        <li>기본정보</li>
+        <table class="first_table">
+            <tr>
+                <td rowspan="4">
+                    <img src="shiba_inu.jpg" alt="사진" width="50" height="85">
+                </td>
+                <th>이름</th>
+                <td colspan="3">시 바 견</td>
+            </tr>
+
+            <tr>
+                <th>학교</th>
+                <td colspan="3">상일미디어고등학교</td>
+            </tr>
+
+            <tr>
+                <th>학년</th>
+                <td>2</td>
+                <th>반</th>
+                <td>2</td>
+            </tr>
+
+            <tr>
+                <th>전공</th>
+                <td colspan="3">스마트소프트웨어과</td>
+            </tr>
+
+            <tr>
+                <th>동아리</th>
+                <td colspan="4">전공동아리</td>
+            </tr>
+        </table>
+
+        <li>출신학교</li>
+        <table class="school">
+            <tr>
+                <th rowspan="3">출신학교</th>
+                <td>초등</td>
+                <td>OO초등학교</td>
+            </tr>
+
+            <tr>
+                <td>중등</td>
+                <td>XX중학교</td>
+            </tr>
+
+            <tr>
+                <td>고등</td>
+                <td>ㅁㅁ고등학교</td>
+            </tr>
+        </table>
+    </ol>
+</body>
+</html>
