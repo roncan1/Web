@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        #container {
+            background-image: url(exam_img.jpg);
+            background-size: 1200px 680px;
+            background-repeat: no-repeat;
+            width: 1200px;
+            height: 680px;
+        }
+
+        p {
+            font-size: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        #contents1 {
+            color: white;
+            width: 500px;
+            height: 300px;
+            float: left;
+            text-align: center;
+            border: 2px solid aquamarine;
+            margin-left: 100px;
+        }
+
+        #contents2 {
+            background-color: tomato;
+            width: 500px;
+            height: 300px;
+            float: left;
+            border: 2px dotted springgreen;
+            position: relative;
+        }
+
+        #contents2 p {
+            position: absolute;
+            padding-top: 100px;
+            padding-left: 50px;
+        }
+
+        table {
+            margin: 10px auto;
+        }
+
+        th {
+            border: 1px solid skyblue;
+        }
+
+        td {
+            border: 1px dashed salmon;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+
+        <p>안녕하세요</p>
+        <p>상일미디어고등학교입니다.</p>
+        <div id="contents1">
+            <p>저희 학교 학과를 소개해 볼깨요</p>
+            <table>
+                <tr>
+                    <td>1</td>
+                    <td>스마트소프트웨어과</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>스마트정보통신과</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>디지털미디어디자인과</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>디지털만화영상과</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>바이오푸드과</td>
+                </tr>
+            </table>
+        </div>
+        <div id="contents2">
+            <p>이 중에서 저는 스마트 소프트웨어과 입니다.</p>
+        </div>
+    </div>
+</body>
+</html>
