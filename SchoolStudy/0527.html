@@ -2,18 +2,25 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>수행평가연습</title>
+    <title>수행평가 문제</title>
 
     <style>
-        #container {
+
+        @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+
+        #total_layout {
             margin: 10px auto;
             width: 1800px;
         }
 
         #header {
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            tab-size: 35px;
+            font-family: 'Jua', sans-serif;
             text-align: right;
+            font-size: 35px;
+            width: 100%;
+            height: 150px;
         }
 
         h1 {
@@ -39,6 +46,7 @@
         a {
             color: white;
             font-size: 30px;
+            font-family: 'Cute Font', cursive;
             text-decoration: none;
         }
 
@@ -49,7 +57,7 @@
             float: left;
         }
         .image1 {
-            border-radius: 45px;
+            border-radius: 50%;
             margin-top: 50px;
             width: 500px;
             height: 500px;
@@ -57,18 +65,19 @@
 
         #contents1{
             width: 1200px;
-            height: 240px;
+            height: 230px;
             float: left;
+            text-align: center;
             font-size: 30px;
         }
 
         th {
-            font-family: serif;
+            font-family: 'Cute Font', cursive;
             border: 1px dashed cornflowerblue;
         }
 
         td {
-            font-family: serif;
+            font-family: 'Single Day', cursive;
             border: 2px dotted crimson;
         }
 
@@ -83,26 +92,27 @@
             height: 100px;
             text-align: center;
             font-size: 15px;
-            background-color: violet;
         }
     </style>
 </head>
 <body>
-    <div id="container">
+    <div id="total_layout">
         <header id="header">
-            <h1>수행평가 연습</h1>
+            <h1>수행평가 결과물</h1>
             <p>20221-최지민</p>
         </header>
 
         <nav id="navigation">
             <ul>
-                <li><a href="https://www.naver.com/">NAVER 바로가기</a></li>
+                <li><a href="https://www.naver.com/">Naver 바로가기</a></li>
+                <li><a href="https://www.google.co.kr/intl/ko/chrome/">chrom 바로가기</a></li>
+                <li><a href="https://www.daum.net/">Daum 바로가기</a></li>
                 <li><a href="http://sangilmedia.sen.hs.kr/index.do">상미고 바로가기</a></li>
             </ul>
         </nav>
 
         <aside id="side1">
-            <img class="image1" src="shiba.jpg" alt="배경사진">
+            <img class="image1" src="lion.jpg" alt="배경사진">
             <!-- 수행평가에서는 지정된 사진으로 해야함 -->
         </aside>
 
@@ -110,36 +120,51 @@
             <table>
                 <tr>
                     <th>이름</th>
-                    <th colspan="3">최 지 민</th>
+                    <td colspan="3">홍길동</td>
                 </tr>
 
                 <tr>
                     <th>학교</th>
-                    <th colspan="3">상일미디어고등학교</th>
+                    <td colspan="3">상일미디어고등학교</td>
                 </tr>
 
                 <tr>
                     <th>학년</th>
-                    <th>2</th>
+                    <td>2</td>
                     <th>반</th>
-                    <th>2</th>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <th>전공</th>
+                    <td colspan="3">스마트소프트웨어과</td>
+                </tr>
+
+                <tr>
+                    <th>동아리</th>
+                    <td colspan="3"></td>
                 </tr>
             </table>
         </section>
 
-        <section id=" contents2">
+        <section id="contents2">
             <form action="">
-                <fieldset style="font-size: 35px; ">
-                    <textarea cols="110" rows="9" placeholder="스소과 지원이유..." style="font-size: 20px;"></textarea>
+                <fieldset style="font-size: 30px; font-family: 'Jua', sans-serif; position: relative; top: 15px;">
+                    <legend>스소과 지원이유</legend>
+                    <textarea cols="70" rows="9" placeholder="제가 스마트소프트웨어과에 들어오게 된 계기는..." 
+                        style="font-size: 20px; font-family: 'Jua', sans-serif;"></textarea>
                     <br><br>
-                    <input type="submit" style="font-size: 20px; position: absolute; right: 50px; bottom: 15px;">
+                    <input type="submit" value="제출" style="font-family: 'Jua', sans-serif; font-size: 20px; 
+                        position: absolute; right: 50px; bottom: 15px;">
                 </fieldset>
             </form>
         </section>
 
         <footer id="footer">
             <hr>
-            <p>상일미디어고등학교 스마트소프트웨어과</p>
+            <p>상일미디어고등학교 스마트소프트웨어과 <br>
+            2학년 프로그래밍S 수행평가 제출 20221-최지민</p>
+            
         </footer>
     </div>
 </body>
