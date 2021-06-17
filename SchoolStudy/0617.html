@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        #contaner {
+            width: 95%;
+            margin: 0px auto;
+        }
+
+        #head {
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            color: purple;
+            position: relative;
+            top: 30px;
+        }
+
+        #navi {
+            margin: 0 auto;
+            position: sticky;
+            top: 0;
+        }
+
+        #navi ul {
+            list-style-type: none;
+            text-align: center;
+            background-color: lightblue;
+            padding: 10px;
+        }
+
+        #navi li {
+            display: inline-block;
+            font-size: 10px;
+        }
+
+        #navi a {
+            color: black;
+            text-decoration: none;
+            padding: 10px 30px;
+            font-weight: bolder;
+        } 
+
+        #navi a:hover {
+            background-color: lightcoral;
+            color: white;
+        }
+
+        main {
+            margin-top: 50px;
+            width: 100%;
+            background-color: lightcyan;
+            padding: 10px;
+        }
+
+        section h2:only-of-type {
+            text-decoration: underline;
+        }
+
+        section:target {
+            background-color: lightblue;
+            color: lightyellow;
+            padding: 5px;
+        }
+
+        #footer {
+            text-align: left;
+            width: 100%;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div id="contaner">
+        <header id="head">
+            <h1>상일미디어고등학교</h1>
+        </header>
+
+        <nav id="navi">
+            <ul>
+                <li><a href="#contents1">건학이념</a></li>
+                <li><a href="#contents2">숭조</a></li>
+                <li><a href="#contents3">예의</a></li>
+                <li><a href="#contents4">질서</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="contents1">
+                <h2>건학이념</h2>
+                <p>숭조,예의,질서(崇祖,禮儀,秩序)의 기본 인간 혼(魂)을 심어주고 부모(父母) 및 어른을 공경하고
+                    서로 우애협력(友愛協力)하는 아름다운 전통의 한민족문화(韓民族文化) 발전에 적극 몸바치는
+                    용감하고 강직(强直)한 자유민주 대한(自由民主 大韓)의 참 인간(人間)을 기른다.</p>
+            </section>
+            <br>
+            <hr>
+            <br>    
+            <section id="contents2">
+                <h2>1. 숭조(崇祖) : 숭조정신(崇祖精神)의 함양(涵養)</h2>
+                <p>조상을 숭상하고 부모님께 효성을 다하는 마음과 실천을 통해 자아의 정체성을 확립하고 전통적인 윤리사상을 계승하는 인간관을 확립한다.</p>
+            </section>
+            <br>
+            <hr>
+            <br>
+            <section id="contents3">
+                <h2>2. 예의(禮儀) : 예절(禮節) 바른 생활(生活)의 습관화(習慣化)</h2>
+                <p>동방예의지국의 민족으로 긍지와 자부심을 가지고 전통문화의 올바른 계승 발전과 미풍양속을 심화 시켜 떳떳한 한민족으로서의 존엄성을 갖게 한다.</p>
+            </section>
+            <br>
+            <hr>
+            <br>
+            <section id="contents4">
+                <h2>3. 질서(秩序) : 질서의식(秩序意識)의 고취(鼓吹)</h2>
+                <p>기본생활의 습관화로 질서의식을 고취하여 가정,학교,국가 사회생활이 안정되고 규범을 준수하는 아름답고 평안한 복지사회를 건설할 인재를 양성한다.</p>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <hr>
+            <p>
+                [05282]서울 강동구 천호대로219길 61 (상일동, 상일미디어고등학교)
+                <br>
+                대표전화) 02-428-0732
+            </p>
+        </footer>
+    </div>
+    
+</body>
+</html>
