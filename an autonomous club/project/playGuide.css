@@ -477,3 +477,20 @@ body.on {
     padding-bottom: 50px;
     margin-top: 15px;
 }
+
+/* 콘텐츠 영역 */
+
+#contents {
+    width: 100%;
+}
+
+#contents .guide_select{
+    position: relative;
+    left:  45%;
+}
+
+#contents .guide_select ul li {
+    float: left;
+    text-align: center;
+    
+}
