@@ -485,12 +485,8 @@ body.on {
 }
 
 #contents .guide_select{
-    position: relative;
-    left:  45%;
+   width: 100%;
+   height: max-content;
+   
 }
 
-#contents .guide_select ul li {
-    float: left;
-    text-align: center;
-    
-}
