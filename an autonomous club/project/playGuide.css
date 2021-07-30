@@ -484,7 +484,11 @@ body.on {
     width: 100%;
 }
 
-#contents .guide_select{
+#contents img{
+    width: 100%;
+}
+
+#contents .guide{
    width: 100%;
    height: max-content;
    
