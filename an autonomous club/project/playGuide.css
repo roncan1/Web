@@ -14,6 +14,12 @@
     src: url("../font/nexon_goithic.eot?#iefix") format("embedded-opentype"), url("../font/nexon_goithic.woff") format("woff"), url("../font/nexon_goithic.ttf") format("truetype");
 }
 
+@font-face {
+    src : url("font/윤고딕320.ttf");
+    font-style: normal;
+    font-family: "yoon gothic"; 
+}
+
 a,
 address,
 article,
@@ -498,19 +504,41 @@ body.on {
    height: 100%;
 }
 
+.category {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.guide ul {
+    position: relative;
+    padding: 30px 0 0 0;
+}
+
 .guide ul li {
     display: inline;
-    line-height: 1.2;
-    font-family: 'Noto Sans KR', 'NanumBarunGothic', '돋움', sans-serif;
+}
+
+.guide ul li a{
+    font-family: 'yoon gothic';
     font-size: 20px;
     font-weight: 400;
+    text-align: center;
 }
+
+.hero_guide {
+    color: #0077ff;
+}
+
 
 .guide ul li p {
     display: inline;
-    line-height: 1.2;
-    font-family: 'Noto Sans KR', 'NanumBarunGothic', '돋움', sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
     font-size: 20px;
-    font-weight: 400;
+    color: #b6b6b6;
+}
+
+.guide hr {
+    margin-top: 25px;
 }
 
