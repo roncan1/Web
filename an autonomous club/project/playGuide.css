@@ -484,13 +484,33 @@ body.on {
     width: 100%;
 }
 
-#contents img{
+.img_bar {
+    margin-top: 35px;
+    position: relative;
+}
+
+.back_img {
     width: 100%;
 }
 
 #contents .guide{
    width: 100%;
-   height: max-content;
-   
+   height: 100%;
+}
+
+.guide ul li {
+    display: inline;
+    line-height: 1.2;
+    font-family: 'Noto Sans KR', 'NanumBarunGothic', '돋움', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.guide ul li p {
+    display: inline;
+    line-height: 1.2;
+    font-family: 'Noto Sans KR', 'NanumBarunGothic', '돋움', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
 }
 
