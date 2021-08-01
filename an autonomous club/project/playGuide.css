@@ -507,6 +507,7 @@ body.on {
 .category {
     width: 1240px;
     margin: 0 auto;
+
 }
 
 .guide ul {
@@ -541,4 +542,37 @@ body.on {
 .guide hr {
     margin-top: 25px;
 }
+
+.recruitment {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.recruitment .title {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.recruitment .title hr {
+    width: 10%;
+    height: 4px;
+    background-color: #0077ff;
+}
+
+.recruitment h2 {
+    font-family: 'yoon gothic';
+    font-size: 30px;
+    font-weight: bold;
+    color: #757575;
+    text-align: center;
+}
+
+.recruitment img{
+    width: 65%;
+    height: 65%;
+    border-radius: 2%;
+    margin-bottom: 100px;
+}
+
 
