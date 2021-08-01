@@ -504,6 +504,7 @@ body.on {
    height: 100%;
 }
 
+/* 카테고리 */
 .category {
     width: 1240px;
     margin: 0 auto;
@@ -515,7 +516,7 @@ body.on {
     padding: 30px 0 0 0;
 }
 
-.guide ul li {
+.guide .category ul li {
     display: inline;
 }
 
@@ -543,6 +544,7 @@ body.on {
     margin-top: 25px;
 }
 
+/* 용사 모집 */
 .recruitment {
     width: 80%;
     margin: 0 auto;
@@ -568,11 +570,80 @@ body.on {
     text-align: center;
 }
 
-.recruitment img{
+.recruitment .image img{
     width: 65%;
     height: 65%;
     border-radius: 2%;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
+}
+
+.image {
+    position: relative;
+}
+
+.icon_back {
+    position: absolute;
+    width: 65%;
+    right: 12%;
+}
+.image .icon {
+    position: absolute;
+    right:  0;
+    bottom: 0;
+}
+
+.image .icon img {
+    width: 100px;
+    height: 100px;
+}
+
+.detail {
+    width: 60%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.detail img {
+    width: 25px;
+    height: 25px;
+}
+
+.detail ul li p {
+    font-size: 15px;
+    font-family: 'yoon gothic';
+    color: #757575;
 }
 
 
+/* 용사 관리 */
+.management {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.management .title {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.management .title hr {
+    width: 10%;
+    height: 4px;
+    background-color: #0077ff;
+}
+
+.management h2 {
+    font-family: 'yoon gothic';
+    font-size: 30px;
+    font-weight: bold;
+    color: #757575;
+    text-align: center;
+}
+
+.management .image img{
+    width: 65%;
+    height: 65%;
+    border-radius: 2%;
+    margin-bottom: 10px;
+}
