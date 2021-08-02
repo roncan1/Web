@@ -490,13 +490,17 @@ body.on {
     width: 100%;
 }
 
+
+
 .img_bar {
-    margin-top: 35px;
     position: relative;
+    background-color: #313131;
 }
 
 .back_img {
+    margin-top: 10px;
     width: 100%;
+    height: 100%;
 }
 
 #contents .guide{
