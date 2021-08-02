@@ -548,25 +548,25 @@ body.on {
     margin-top: 25px;
 }
 
-/* 용사 모집 */
-.recruitment {
+/* 아이템 종류 */
+.Kinds {
     width: 80%;
     margin: 0 auto;
     text-align: center;
 }
 
-.recruitment .title {
+.Kinds .title {
     margin-top: 150px;
     margin-bottom: 50px;
 }
 
-.recruitment .title hr {
+.Kinds .title hr {
     width: 10%;
     height: 4px;
     background-color: #0077ff;
 }
 
-.recruitment h2 {
+.Kinds h2 {
     font-family: 'yoon gothic';
     font-size: 30px;
     font-weight: bold;
@@ -574,7 +574,7 @@ body.on {
     text-align: center;
 }
 
-.recruitment .image img{
+.Kinds .image img{
     width: 65%;
     height: 65%;
     border-radius: 2%;
@@ -583,26 +583,25 @@ body.on {
 
 
 
-
-/* 용사 관리 */
-.management {
+/* 아이템 획득 */
+.acheive {
     width: 80%;
     margin: 0 auto;
     text-align: center;
 }
 
-.management .title {
+.acheive .title {
     margin-top: 150px;
     margin-bottom: 50px;
 }
 
-.management .title hr {
+.acheive .title hr {
     width: 10%;
     height: 4px;
     background-color: #0077ff;
 }
 
-.management h2 {
+.acheive h2 {
     font-family: 'yoon gothic';
     font-size: 30px;
     font-weight: bold;
@@ -610,7 +609,41 @@ body.on {
     text-align: center;
 }
 
-.management .image img{
+.acheive .image img{
+    width: 65%;
+    height: 65%;
+    border-radius: 2%;
+    margin-bottom: 10px;
+}
+
+
+/* 상점 */
+.shop {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.shop .title {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.shop .title hr {
+    width: 10%;
+    height: 4px;
+    background-color: #0077ff;
+}
+
+.shop h2 {
+    font-family: 'yoon gothic';
+    font-size: 30px;
+    font-weight: bold;
+    color: #757575;
+    text-align: center;
+}
+
+.shop .image img{
     width: 65%;
     height: 65%;
     border-radius: 2%;

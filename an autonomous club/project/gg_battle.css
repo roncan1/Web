@@ -582,8 +582,6 @@ body.on {
 }
 
 
-
-
 /* 용사 관리 */
 .management {
     width: 80%;
@@ -616,6 +614,7 @@ body.on {
     border-radius: 2%;
     margin-bottom: 10px;
 }
+
 
 /* 설명 공통 */
 .image {
