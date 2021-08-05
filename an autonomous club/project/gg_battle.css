@@ -548,26 +548,26 @@ body.on {
     margin-top: 25px;
 }
 
-/* 용사 모집 */
-.recruitment {
+/* 전투 설명 */
+.battle {
     width: 80%;
     margin: 0 auto;
     text-align: center;
 }
 
-.recruitment .title {
+.battle .title {
     margin-top: 150px;
     margin-bottom: 50px;
 }
 
-.recruitment .title hr {
+.battle .title hr {
     width: 10%;
     height: 4px;
     background-color: #0077ff;
     margin: 10 auto;
 }
 
-.recruitment h2 {
+.battle h2 {
     font-family: 'yoon gothic';
     font-size: 30px;
     font-weight: bold;
@@ -575,42 +575,7 @@ body.on {
     text-align: center;
 }
 
-.recruitment .image img{
-    width: 65%;
-    height: 65%;
-    border-radius: 2%;
-    margin-bottom: 10px;
-}
-
-
-/* 용사 관리 */
-.management {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.management .title {
-    margin-top: 150px;
-    margin-bottom: 50px;
-}
-
-.management .title hr {
-    width: 10%;
-    height: 4px;
-    background-color: #0077ff;
-    margin: 10 auto;
-}
-
-.management h2 {
-    font-family: 'yoon gothic';
-    font-size: 30px;
-    font-weight: bold;
-    color: #757575;
-    text-align: center;
-}
-
-.management .image img{
+.battle .image img{
     width: 65%;
     height: 65%;
     border-radius: 2%;
