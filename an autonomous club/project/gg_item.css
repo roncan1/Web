@@ -540,6 +540,7 @@ body.on {
     display: inline;
     margin-left: 10px;
     margin-right: 10px;
+    text-align: center;
     font-size: 20px;
     color: #b6b6b6;
 }
