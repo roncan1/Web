@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>자리배치도 만들기</title>
+</head>
+<body>
+    <script>
+        var memberNum = prompt("입장객 수 입력");
+        var colNum = prompt("한 줄에 않을 사람 수");
+        var lowNum = memberNum / colNum;
+        if(memberNum%10 != 0) {
+            lowNum++;
+        }
+        document.write("필요한 줄의 개수는 " + parseInt(lowNum) + "줄 입니다.")
+
+        
+    </script>
+</body>
+</html>
