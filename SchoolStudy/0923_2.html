@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>구구단</title>
+</head>
+<body>
+    <script>
+        function gugudan(dan, i) {
+            let result = 0;
+            result = dan * i;
+            
+            return result;
+        }
+
+        let i, j;
+        let printValue;
+
+        for(i = 1; i < 10; i++) {
+            document.write("<br><h3>" + i + "단</h3><br>");
+
+            for(j = 1; j < 10; j++) {
+                printValue = gugudan(i, j);
+                document.write(i + " * " + j + " = " + printValue + "<br>")
+            }
+        }
+    </script>
+</body>
+</html>
