@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            display: inline-block;
+            margin: 15px;
+            padding: 0px 15px 10px 15px;
+            line-height: 20px;
+            background-color: burlywood;
+        }
+
+        section {
+            background-color: cadetblue;
+            border: 2px white dotted;
+        }
+    </style>
+
+</head>
+<body>
+    <script>
+        function gugudan1(dan = 2) {
+            let j;
+
+            for (j = 1; j < 10; j++) {
+                document.write(dan + "*" + j + "=" + dan*j);
+                document.write("<br>")
+                
+            }
+        }
+
+        let i;
+        for (i = 1; i < 10; i++) {
+            document.write("<div>");
+            document.write("<h3>" + i + "단</h3>");
+            document.write("<section>");
+            gugudan1(i);
+            document.write("</section>");
+            document.write("</div>");
+        }
+
+        document.write("<br>초기값이 있는 2단 출력<br>");
+        gugudan1();
+    </script>
+</body>
+</html>
