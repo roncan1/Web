@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>폼 이벤트</title>
+    <style>
+        div {
+            width: 90%;
+            margin: 0 auto;
+            font-size: 15pt;
+        }
+
+        #radioButton {
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        #btnArea {
+            text-align: center;
+            margin: 10px 0px;
+            padding: 10px;
+        }
+
+        #colorChange {
+            width: 300px;
+            height: 300px;
+            border: 2px dashed black;
+            border-radius: 50%;
+            margin: 30px auto;
+            position: relative;
+            text-align: center;
+            background-color: tomato;
+        }
+
+        #bgText {
+            position: absolute;
+            top: 100px;
+            left: 90px;
+            background-color: white;
+            display: inline-block;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div>
+        <form onreset="confirm('초기화를 시키겠습니까?')" onsubmit="confirm('제출하시겠습니까?')">
+            <!-- <input type="reset" value="초기화">
+            <input type="submit" value="제출"> -->
+
+            <section id="radioButton">
+                <input type="radio" id="color1" name="color" value="red" onclick="changeColor('red')" onchange="alert('값이 변경되었습니다.')">
+                <label for="color1">red</label>
+                
+                <input type="radio" id="color2" name="color" value="green" onclick="changeColor('green')" onchange="alert('값이 변경되었습니다.')">
+                <label for="color2">green</label>
+
+                <label for="color3">
+                    <input type="radio" id="color3" name="color" value="blue" onclick="changeColor('blue')" onchange="alert('값이 변경되었습니다.')">
+                    blue
+                </label>
+            </section>
+
+            <section id="btnArea">
+                <input type="reset" id="resetBtn">
+                <input type="submit" id="submitBtn">
+            </section>
+
+            <section id="colorChange">
+                <p id="bgText">Default</p> 
+            </section>
+        </form>
+    </div>
+
+    <script>
+        function changeColor(color) {
+            let changeBg = document.querySelector('#colorChange');
+            changeBg.style.backgroundColor = color;
+            
+            document.querySelector('#bgText').innerText = color;
+            
+            let changeTextBg = document.querySelector('#bgText');
+            changeTextBg.style.backgroundColor = "#" + Math.round(Math.random()*0xffffff).toString(16);
+
+            
+        }
+    </script>
+</body>
+</html>
