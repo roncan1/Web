@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>함수</title>
+</head>
+
+<body>
+    <h1 id="school">상일미디어고등학교</h1>
+    <br>
+    <p id="school">스마트소프트웨어과</p>
+    <script>
+
+        document.querySelector("#school").style.backgroundColor = "yellow";
+        confirm("message")
+
+        // for(i = 1; i < 10; i++) {
+        //     document.write("<h3>" + i + "단</h3>");
+        //     for(j = 1; j < 10; j++) { 
+        //         result = i + j;
+        //         document.write(i + "+" + j + "=" + result);
+        //         document.write("<br>");
+        //     }
+        // }
+
+        function add(dan) {
+            let j;
+            for (j = 1; j < 10; j++) {
+
+                document.write(dan + "+" + j + "=" + (dan + j));
+                document.write("<br>");
+            }
+        }
+
+        add(Number(prompt("숫자 입력")));
+    </script>
+</body>
+
+</html>
