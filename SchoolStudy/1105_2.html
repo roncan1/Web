@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>객체</title>
+</head>
+<body>
+    <script>
+        let time = new Date();
+        document.write("현재 시간 : " + time.toLocaleString());
+
+        let num = ["one", "two", "three", "four", "five", "six"];
+        let i;
+        for(i = 0; i < num.length; i++) {
+            document.write("<p>" + num[i] + "</p>");
+        }
+
+        let number = ["1", "2", "3"];
+        let alpha = ["a", "b", "c", "d", "e"];
+        document.write(number + alpha);
+
+        let addAlpha = number.concat(alpha);
+        let addNumber = alpha.concat(number);
+
+        document.write("<br>");
+        document.write("number에 alpha추가" + addAlpha + "<br>");
+        document.write("alpha에 number추가" + addNumber);
+
+        let str1 = alpha.join();
+        let str2 = alpha.join("//");
+
+        document.write("<br>" + str1 + "<br>");
+        document.write(str2 + "<br>");
+
+        let newNumber = number.push(4, 5, 6);
+        document.write("<br>" + newNumber.length + "<br>" + newNumber);
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#" onclick="backgroundChange()">Random 색</a>
+    <section id="area" style="width: 100px; height: 100px; border: 1px solid;">
+
+    </section>
+
+    <script>
+        function backgroundChange() {
+            let random;
+            random = "#" + Math.round(Math.random() * 0xffffff).toString(16);
+            document.querySelector('#area').style.backgroundColor = random;
+
+        }
+    </script>
+</body>
+</html>
