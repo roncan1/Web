@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number = [10, 11, 12, 13];
+
+        document.write("아무런 메서드를 사용하지 않은 배열 : " + number + "<br>");
+
+        number.push(14, 15, 16);
+        document.write("push()를 사용한 후의 배열 : " + number + "<br>");
+
+        number.unshift(8,9);
+        document.write("unshift()를 사용한 후의 배열 : " + number + "<br>");
+
+        number.pop();
+        document.write("pop()를 사용한 후의 배열 : " + number + "<br>");
+
+        number.shift();
+        number.shift();
+        document.write("shift()를 사용한 후의 배열 : " + number + "<br>");
+
+
+        var number2 = number.slice(2, 4);
+        document.write("number2 : " + number2 + "<br>");
+
+        var number3 = number.slice(3);
+        document.write("number3 : " + number3 + "<br>");
+    </script>
+</body>
+</html>

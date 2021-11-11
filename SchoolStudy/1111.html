@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>20221-최지민</title>
+
+    <style>
+        div {
+            width: 90%;
+            margin: 0 auto;
+            font-size: 15pt;
+        }
+
+        #radioBtn {
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        section {
+            border: 2px solid;
+            border-radius: 15px;
+            margin: 10px auto;
+            text-align: center;
+        }
+
+        #colorArea {
+            display: none;
+        }
+
+        #changeColor {
+            width: 300px;
+            height: 300px;
+        }
+
+        #showDetail {
+            padding: 15px;
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--라디오 버튼 - 색상 선택 영역, 설명 영역-->
+    <div>
+        <form>
+            <!--라디오 버튼 영역-->
+            <section id="radioBtn">
+                <!--색상 변경 라디오 버튼-->
+                <input type="radio" name="check" value="color" id="check_color" onclick="showColor()">
+                <label for="color">색상 변경</label>
+
+                <!--설명 영역 라디오 버튼-->
+                <input type="radio" name="check" value="detail" id="check_detail" onclick="showDetail()">
+                <label for="check_detail">설명 보기</label>
+            </section>
+            <!--색상 변경 영역-->
+            <section id="colorArea">
+                <!--빨간색 라디오 버튼-->
+                <input type="radio" name="colorCheck" value="red" id="red" onclick="colorChange('red')">
+                <label for="red">Red</label>
+                <!--초록색 라디오 버튼-->
+                <input type="radio" name="colorCheck" value="green" id="green" onclick="colorChange('green')">
+                <label for="green">Green</label>
+                <!--파란색 라디오 버튼-->
+                <input type="radio" name="colorCheck" value="blue" id="blue" onclick="colorChange('blue')">
+                <label for="blue">Blue</label>
+
+                <!--색상 변경 영역 라디오 버튼-->
+                <section id="changeColor"></section>
+            </section>
+            <!--설명 영역-->
+            <section id="showDetail">
+                <h3>색상 변경방법</h3>
+                <ul>
+                    <li>10진수 변경 방법 -> RGB(R, G, B)</li>
+                    <li>16진수 변경 방법 -> #ffffff</li>
+                    <li>색상 이름으로 변경 방법 -> 'red', 'blue', 'green'</li>
+                </ul>
+            </section>
+        </form>
+    </div>
+    <script>
+        // 전역변수 선언
+        colorSection = document.querySelector('#changeColor');
+        colorArea = document.querySelector('#colorArea');
+        detailArea = document.querySelector('#showDetail');
+
+        function showColor() {
+            colorArea.style.display = "block";
+            detailArea.style.display = "none";
+            colorSection.style.backgroundColor = "yellow";
+
+        }
+
+        function colorChange(color) {
+            colorSection.style.backgroundColor = color;
+        }
+
+        function showDetail() {
+            colorArea.style.display = "none";
+            detailArea.style.display = "block";
+
+        }
+    </script>
+
+</body>
+
+</html>
