@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20221_최지민</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        *:target {
+            background-color: lightgreen;
+            color: white;
+        }
+
+        #container {
+            width: 90%;
+            position: relative;
+            margin: 0auto;
+        }
+
+        img {
+            position: absolute;
+            top: 5px;
+        }
+
+        #header {
+            text-align: center;
+        }
+
+        #navi {
+            position: sticky;
+            top: 5px;
+        }
+
+        #navi ul {
+            list-style-type: none;
+            text-align: center;
+            background-color: lightcoral;
+        }
+
+        #navi ul li {
+            display: inline-block;
+            margin: 30px 60px;
+        }
+
+        a:link {
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        a:visited {
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        a:hover {
+            color: yellow;
+        }
+
+        section {
+            float: left;
+            width: 50%;
+            padding: 15px;
+            background-color: lightyellow;
+        }
+
+        footer {
+            clear: left;
+        }
+
+        .school {
+            color: blue;
+        }
+
+        #active {
+            background-color: white;
+            color: black;
+            width: 95%;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="container">
+        <img src="image3.png" alt="학교 로고" width="50" height="50">
+        <header id="header">
+            <h2>상일미디어고등학교</h2>
+            <h3 style="color: lightskyblue;">학교 탐방의 날 진로체험활동</h3>
+        </header>
+
+        <nav id="navi">
+            <ul>
+                <li><a href="#soft">스마트소프트웨어과</a></li>
+                <li><a href="#comunity">스마트정보통신과</a></li>
+                <li><a href="#design">디지털미디어디자인과</a></li>
+                <li><a href="#ani">디지털만화영상과</a></li>
+                <li><a href="#food">바이오푸드과</a></li>
+            </ul>
+        </nav>
+
+        <main id="contents">
+            <section id="soft">
+                <h3>스마트소프트웨어과</h3>
+                <section id="active">
+                    <h4>체험내용</h4>
+                    <ol>
+                        <li>게임 엔진 유니티(Unity)로 게임 제작 체험하기</li>
+                        <li>안드로이드 스튜디오로 게임 제작 체험하기</li>
+                    </ol>
+                    <p><strong>장소 : </strong>응용프로그래밍 2실</p>
+                </section>
+            </section>
+
+            <section id="comunity">
+                <h3>스마트정보통신과</h3>
+                <section id="active">
+                    <h4>체험내용</h4>
+                    <ol>
+                        <li>내 손안에 작은 세상 사물인터넷</li>
+                        <li>드론 축구</li>
+                    </ol>
+                    <p><strong>장소 : </strong>네트워크프로그래밍실</p>
+                </section>
+            </section>
+
+            <section id="design">
+                <h3>디지털미디어디자인과</h3>
+                <section id="active">
+                    <h4>체험내용</h4>
+                    <ol>
+                        <li>포토샵을 활용하여 비즈로 소품만들기</li>
+                    </ol>
+                    <p><strong>장소 : </strong>시각디자인실</p>
+                </section>
+            </section>
+
+            <section id="ani">
+                <h3>디지털만화영상과</h3>
+                <section id="active">
+                    <h4>체험내용</h4>
+                    <ol>
+                        <li>만화캐릭터 굿즈 만들기 체험</li>
+                    </ol>
+                    <p><strong>장소 : </strong>만화콘텐츠제작실</p>
+                </section>
+            </section>
+
+            <section id="food">
+                <h3>바이오푸드과</h3>
+                <section id="active">
+                    <h4>체험내용</h4>
+                    <ol>
+                        <li>나만의 쿠키 만들기</li>
+                        <li>라떼아트</li>
+                    </ol>
+                    <p><strong>장소 : </strong>제과제빵실, 바리스타실습실</p>
+                </section>
+            </section>
+        </main>
+
+    
+        <footer>
+            <hr>
+            <h3 class="school">상일미디어고등학교</h3>
+            <p>
+                [05282]서울 강동구 천호대로 219길 61 (상일동, 상일미디어고등학교)<br>
+                &nbsp;&nbsp;서울 강동구 상일돌 189<br>
+                대표전화) 02-428-0732&nbsp;&nbsp;팩스) 02-3427-0733<br>
+                <b>Copyright COPY@SANGIL MEDIA HIGH SCHOOL ALL RIGHT RESERVED</b>
+            </p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
